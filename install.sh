@@ -58,7 +58,7 @@ case "$CHOICE" in
 	read broadcast;
 	echo "Masukan IP Network (C:192.168.1.0):"
 	read network;
-	sudo mv /etc/network/interfaces /etc/network/interfaces.bak
+	sudo cp /etc/network/interfaces /etc/network/interfaces.bak
 	sudo touch /etc/network/interfaces 
 	busybox echo "auto lo" >> /etc/network/interfaces
 	busybox echo "iface lo inet loopback" >> /etc/network/interfaces
