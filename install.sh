@@ -103,11 +103,7 @@ case "$CHOICE" in
 	echo "Restorisasi Berhasil"
 	echo ""
 	echo "Settingan IP Anda Sekarang : "
-	echo "IP	: $IP"
-	echo "Gateway	: $gateway"
-	echo "Netmask	: $netmask"
-	echo "Broadcast	: $broadcast"
-	echo "Network	: $network"
+	ifconfig -a
 	echo ""
 	busybox sleep 5
 	read -p "Press [Enter] To Continue"
