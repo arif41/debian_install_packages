@@ -102,9 +102,6 @@ case "$CHOICE" in
 	echo ""
 	echo "Restorisasi Berhasil"
 	echo ""
-	echo "Settingan IP Anda Sekarang : "
-	ifconfig -a
-	echo ""
 	busybox sleep 5
 	read -p "Press [Enter] To Continue"
 	busybox sleep 1
